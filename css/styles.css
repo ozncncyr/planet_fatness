@@ -171,15 +171,20 @@ img {
 .page-footer .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .copyright-text {
     color: #ffffff;
+    flex-basis:auto;
 }
 
 .social-links {
     display: flex;
     gap: 8px;
+    flex-shrink: 0;
+    align-self: center;
+    margin-right: 20px;
 }
 
 .benefits {
@@ -197,8 +202,9 @@ img {
 }
 
 .downloads {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
     margin-top: 20px;
+}
+
+.downloads .item:not(:last-child){
+    margin-bottom: 8px;
 }
